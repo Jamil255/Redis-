@@ -2,10 +2,10 @@
   "name": "redis",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "hash.js",
   "type": "module",
   "scripts": {
-    "start": " server.js",
+    "start": " hash.js",
     "dev":"server.js"
   },
   "keywords": [],
