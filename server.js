@@ -47,34 +47,35 @@ const stringDataType = async () => {
 
 const listDataType = async () => {
   // <***********lpush,rpush***********>
-
   //   const data = await client.lpush('list1', 'rahul')
   //     data variable return the index of the list
   // const data = await client.rpush("list1","john deo")
-
   // <***********lpop,rpop,LLEN,lrange,ltrim***********>
-
   // llen return the length of the list
   // lpop&rpop return the delete value
   // const data=await client.lpop("list1")
   // const data=await client.rpop("list1")
   //   const data = await client.llen('list1')
   // const data1=await client.lpush("list2","abcc")
-
   // LMOVE <source> <destination> <sourceDirection> <destinationDirection>
-
   //   const data = await client.lmove('list2', 'list1', 'LEFT', 'LEFT')
-
   //   if (data) {
   //     console.log(`Moved element: ${data}`)
   //   } else {
   //     console.log('No element moved; source list may be empty.')
   //   }
-    //   const data = await client.lrange("list1", 0 , -1)
-    // lrange return the list 
+  //   const data = await client.lrange("list1", 0 , -1)
+  // lrange return the list
+  //     const data = await client.ltrim("list1",0,-1)
+    //   console.log(data)
+    
 
-//     const data = await client.ltrim("list1",0,-1)
-//   console.log(data)
+    
+    // <****************************blocking behavior********************>
+    // const data = await client.blpop("list1", 10)
+    // // list name and pop value even value is not exist then 10s wait 
+    // console.log(data);
+    
 }
 
 listDataType()
